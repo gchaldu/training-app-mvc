@@ -1,8 +1,9 @@
 package com.gchaldu.exercise.model.entity;
 
+import java.util.UUID;
+
 public class Exercise {
-    private Long id;
-    private static Long counter=0L;
+    private String id;
     private String name;
     private Integer duration;//repeticiones o tiempo
     private String mouscleGroup;
@@ -11,23 +12,15 @@ public class Exercise {
         this.name = name;
         this.duration = duration;
         this.mouscleGroup = mouscleGroup;
-        this.id = ++counter;
+        this.id = UUID.randomUUID().toString();
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
-    }
-
-    public static Long getCounter() {
-        return counter;
-    }
-
-    public static void setCounter(Long counter) {
-        Exercise.counter = counter;
     }
 
     public String getName() {

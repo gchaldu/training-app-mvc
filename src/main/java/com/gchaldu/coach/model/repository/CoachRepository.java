@@ -1,7 +1,6 @@
 package com.gchaldu.coach.model.repository;
 
 import com.gchaldu.coach.model.entity.Coach;
-import com.gchaldu.training.exception.IdIsLessThanZeroException;
 
 import java.util.HashSet;
 import java.util.Optional;
